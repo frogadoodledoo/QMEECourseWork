@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+
+""" Print birds on seperate spaces """
+
+__author__ = 'Merry Crowson'
+__version__ = '0.0.1'
+
+# Data
+
 birds = ( ('Passerculus sandwichensis','Savannah sparrow',18.7),
           ('Delichon urbica','House martin',19),
           ('Junco phaeonotus','Yellow-eyed junco',19.5),
@@ -13,3 +22,9 @@ birds = ( ('Passerculus sandwichensis','Savannah sparrow',18.7),
 
 # ALSO, PLEASE INCLUDE A DOCSTRING AT THE BEGINNING OF THIS FILE THAT 
 # SAYS WHAT THE SCRIPT DOES AND WHO THE AUTHOR IS
+
+
+for a, b, c in birds: 
+  '''Unpacks the tuple'''
+  print(a,b,c)
+
