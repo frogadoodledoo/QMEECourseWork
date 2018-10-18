@@ -21,12 +21,15 @@ def is_an_oak(name):
 
     >>> is_an_oak('Quercus robur')
     True
-
-
     """
+    words = name.split()
+
+    if len(words[0]) > 7:
+
+        return False   
+    return name.lower().startswith('quercus')
 
 
-    return name.lower().startswith('quercus') #Perhaps use comprehension list to find eact match?
     #
 
 def main(argv): 
